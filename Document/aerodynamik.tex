@@ -1,0 +1,194 @@
+Um das Flugverhalten der Achäne zu untersuchen wurde Schlierenfotografie versucht.
+
+\subsection{Schlieren}\label{subsec:schlieren}
+
+Schlieren entstehen, wenn in einem transparenten Medium eine Homogenitätsstörung hervortritt.\footfullcite{schlieren}
+Dies passiert unter anderem bei Bewegungen der Luft, und ist zum Beispiel als `welligkeit' der Luft über heißen Objekten mit dem bloßen Auge sichtbar\footfullcite[0:50]{josh-BOS}.
+Im Falle der Löwenzahndiaspore zeigen sie die Luftverwirbelungen an, die beim Flug entstehen.
+
+\subsubsection{BOS}\label{subsubsec:bos}
+
+Background Oriented Schlieren\footnotetext{auf deutsch: Hintergrundorientiertes Schlieren} (BOS) ist ein Verfahren,
+mit dem man ohne externe optische Instrumente Schlieren sichtbar machen kann.
+\smallskip\\
+Hierbei werden zwei Kamerabilder mit statischem Hintergrund verglichen,
+wobei das erste Bild als Hintergrund/Referenz benutzt wird, und das zweite die Schlieren erfasst.
+Vergleicht man nun die Bilder miteinander zeigt sich, dass im Schlieren-Bild der Hintergrund entlang der verschiedenen Luftströmungen verzerrt ist.
+Dies liegt daran, dass Unterschiede in der Dichte der Luft das durchquerende Licht gebrochen haben und erscheint auf einer Kamera als \enquote{Verschiebung der Pixel im Kamerabild}\footfullcite[(Übersetzt), 1:07]{josh-BOS},
+welche man mit geeigneter Bildverarbeitung verdeutlichen kann.
+\smallskip\\
+Für beste Resultate nimmt man das Hintergrundbild vor dem Erscheinen der gesuchten Schlieren.
+Sonst werden gleichbleibende Strömungen kaum erfasst, da die Brechung konstant ist.
+\bigskip\\
+BOS hat den Vorteil, dass nur eine Kamera und ein geeigneter Hintergrund benötigt werden, um Schlierenbilder zu machen.
+Dies macht es vom Aufbau her simpler als andere Schlierenfotografieverfahren.
+\smallskip\\
+Leider trägt dieses Verfahren auch Nachteile mit sich, vor allem, dass der Hintergrund und die Kamera sich nicht bewegen dürfen,
+da dies sonst als Störsignal erscheint.
+Auch das Kamerabild muss relativ geräuschfrei sein, was eine gute Kamera und Lichtbedingungen voraussetzt.
+
+\begin{figure}[h]
+    \centering
+    \begin{minipage}{0.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{BOS-setup}
+        \caption{Mein BOS setup, [\textit{Eigene Darstellung}]}
+        \label{fig:sl_bos1}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.4\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{schliere-flamenwerfer}
+        \caption{BOS Bild eines Flammenwerfers, [\textit{Eigene Darstellung}]}
+        \label{fig:sl_bos2}
+    \end{minipage}
+\end{figure}
+
+\newpage
+
+\subsubsection{Ein-Spiegel Schlieren system}\label{subsubsec:ein-spiegel-schlieren-system}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Single_mirror_schlieren}
+    \caption{Ein ein-Spiegel Schlieren system \cite[\textit{in Anlehnung an}][]{esss}}
+    \label{fig:esss}
+\end{figure}
+\noindent
+Dieses system benutzt eine Lichtquelle, einen gekrümmten Spiegel und eine Messerklinge um Schlieren zu visualisieren.
+\smallskip\\
+Die Lichtquelle und Messerklinge werden versetzt, aber trotzdem zum Spiegel gerichtet ausgelegt,
+sodass der Brennpunkt des von der Lichtquelle reflektierten Lichts auf die Messerklinge fällt.
+Eine geeignete Kamera wird hinter der Messerklinge aufgestellt und deren Fokus auf den Spiegel justiert.
+Diese wird die Schlierenbilder nehmen.\\
+Nur wenn Licht von Schlieren gebrochen wird kann es die Messerkante überqueren und in die Kamera gelangen.
+\smallskip\\
+Um das Ausrichten aller Elemente dieser Anordnung zu erleichtern und/oder um den Kontrast der Schlieren einzurichten,
+kann man das Messer verstellen um mehr oder weniger des reflektierten Lichtstrahls zu blockieren.
+Licht, dass nicht von dem Messer blockiert wurde sorgt für den charakteristischen hellen Hintergrund in einem ein-spiegel Schlieren system.
+
+
+
+\newpage
+\begin{figure}[h]
+    \centering
+    \begin{minipage}{0.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{SL_spiegel_setup}
+        \caption{Mein Spiegel, [\textit{Eigene Darstellung}]}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.4\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{SL_spiegel_setup_2}
+        \caption{Meine Lichtquelle und Messerklinge, [\textit{Eigene Darstellung}]}
+    \end{minipage}
+    \label{fig:sl_spi}
+\end{figure}
+\newpage
+
+\subsection{Windtunnel}\label{subsec:windtunnel}
+
+Um die Luftströmungen der Achäne im Flug zu sehen musste eine laminare Windquelle hergestellt werden,
+da beide Schlierenverfahren mit fallenden Objekten schwer verwirklichbar wären.\\
+Der erste Versuch hierzu war mit einer heizplatte.
+Die Hoffnung war einen ähnlichen laminar - turbulent übergang wie die Schlieren der Kerze in Figur ~\ref{fig:sl_heip1} zu bekommen.
+Stattdessen konnte nur ein turbulenter Strömungsverlauf gemessen werden, Idee gescheitert.\\
+
+\begin{figure}[h]
+    \centering
+    \begin{minipage}{0.3\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{kerze-schliere}
+        \caption{laminar - turbulent übergang an einer Kerze \cite{kerze-schliere}}
+        \label{fig:sl_heip1}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.6\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Heizplatte-BOS}
+        \caption{BOS foto von eingeschalteter Heizplatte \ref{fig:sl_bos1}, [\textit{Eigene Darstellung}]}
+        \label{fig:sl_heip2}
+    \end{minipage}
+\end{figure}
+
+\noindent
+Nach sehr kurzfristiger Recherche zur besten Art und Weise einen laminaren Luftstrom zu bekommen,
+wurde ein Windtunnel geplant, gebaut und getestet.
+Hierzu wurde ein 120mm Lüfter als Sogquelle benutzt, und eine Klarsichtfolie als Fenster.
+
+\begin{figure}[h]
+    \centering
+    \begin{minipage}{0.55\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{windtunnel_1}
+        \caption{Windtunnel - Außenansicht, [\textit{Eigene Darstellung}]}
+        \label{fig:windt1}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.4\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{windtunnel_2}
+        \caption{Windtunnel - Innenansicht, [\textit{Eigene Darstellung}]}
+        \label{fig:windt2}
+    \end{minipage}
+\end{figure}
+
+\noindent
+Der Windtunnel funktionierte wunderbar, und der Luftstrom der Kerze war fast statisch.
+
+\begin{figure}[h]
+    \centering
+    \begin{minipage}{0.3\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{windt_sl_l}
+        \caption{Kerze im Windtunnel - wenig Wind, [\textit{Eigene Darstellung}]}
+        \label{fig:windt_sl_l}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.3\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{windt_sl_m}
+        \caption{Kerze im Windtunnel - mäßig Wind, [\textit{Eigene Darstellung}]}
+        \label{fig:windt_sl_m}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.3\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{windt_sl_h}
+        \caption{Kerze im Windtunnel - viel Wind, [\textit{Eigene Darstellung}]}
+        \label{fig:windt_sl_h}
+    \end{minipage}
+\end{figure}
+
+\subsection{Resultat}\label{subsec:resultat}
+
+Beide Schlierenfotografiesysteme haben bereits bei Kerzen, welche relativ starke Luftströmungen generieren, die Schlieren nicht zufriedenstellend visualisieren können.
+Die wesentlich schwächeren, durch den Pappus ausgelösten verwirbelungen waren mit den genutzten Geräten leider nicht sichtbar.\\
+Die am meisten gelungene Aufnahme (Abbildung ~\ref{fig:sl}), wo eine Kerze von unten den Luftstrom generiert,
+zeigt nur wie die Luft am Pappus abgelenkt wird, und nicht die erwartete Verwirbelung,
+wie sie in Abbildung ~\ref{fig:sl_pro}, ein von profis gemachtes bild, zu sehen ist.
+
+\noindent
+Diese Verwirbelung ist, durch die Kreisförmige Obenansicht des Pappus toroidal und bietet so der vorbeiziehenden Luft mehr Widerstand.
+
+\medskip\noindent
+Der Algorithmus für die BOS Bilder ist ~\textattachfile{../BOS/BOS.cpp}{\textcolor{black}{\textbf{hier}}} im PDF eingebettet,
+oder unter\\ ~\url{https://gist.github.com/snaens/2b34830f7e117739d994411dc2abbc91} erreichbar. \ref
+
+
+\newpage
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\textwidth]{schliere}
+    \caption{Beste Aufnahme mit meinem System, [\textit{Eigene Darstellung}]}
+    \label{fig:sl}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{41586_2018_604_Fig5_ESM}
+    \caption{Aufnahmen von profis \footfullcite[, Extended Data Fig. 1]{sl_pro}}
+    \label{fig:sl_pro}
+\end{figure}
+\newpage

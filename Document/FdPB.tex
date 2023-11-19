@@ -1,0 +1,114 @@
+%! Author = snaens
+%! Date = 3/2/23
+
+\documentclass[a4paper, 12pt, final]{article} %TODO: draft → final
+
+\usepackage{amsmath}
+\usepackage[a4paper,
+    left=3cm,
+    top=3cm,
+    bottom=25mm,
+    right=2cm]{geometry}
+\usepackage{biblatex}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage[german]{babel}
+\usepackage{csquotes}
+\usepackage{caption}
+\usepackage[hang,flushmargin]{footmisc}
+\usepackage[hidelinks]{hyperref}
+\usepackage{pdfpages}
+\usepackage{attachfile}
+
+\graphicspath{ {../media/} }
+\addbibresource{FdPB.bib}
+
+% Schriftzug einrichten
+\usepackage{tgadventor}
+\renewcommand*\familydefault{\sfdefault}
+\usepackage[T1]{fontenc}
+\usepackage{color}
+
+
+\title{Der Flug der Pusteblume}
+\author{Samuel Pelz}
+\date{2023}
+
+\captionsetup[figure]{font=small,labelfont=small}
+\begin{document}
+
+    %! suppress = EnDash
+    \includepdf{Deckblatt_Seminararbeit 22-24.pdf}
+    \newpage
+
+
+    \maketitle%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \vspace{3cm}
+    \begin{center}
+        \includegraphics[width=0.75\textwidth]{pusteblume_5}
+    \end{center}
+    \newpage
+
+
+    \tableofcontents%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \listoffigures
+    \newpage
+
+
+    \section{Einleitung}\label{sec:einleitung}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+    \enquote{Ich beobachtete fasziniert den Flug [der Pusteblume] und war beeindruckt von der Leichtigkeit des Fliegens.}\footfullcite{ach_pusteblume}\\
+    Es ist erstaunlich, wie leicht die Pusteblume fliegt.
+    Ein leichter Windstoß reicht aus, um überall ihre Samenflieger zu verteilen,
+    die dann mit dem Wind weite Distanzen zurücklegen können.
+    Diese sonderbaren Fähigkeiten der Pflanze haben sofort Neugier in mir geweckt.
+    Wie schafft sie das, und auch vollkommen passiv, ohne bewegung?\\
+    Die Pusteblume symbolisiert wohl nicht umsonst loslassen und Leichtigkeit\footfullcite{ach_pusteblume}, oder?
+    \newpage
+
+
+    \section{Die Pusteblume}\label{sec:untersuchung-der-pusteblume}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \input{pusteblume}
+
+
+    \section{Aerodynamik}\label{sec:aerodynamik}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \input{aerodynamik}
+
+
+    \section{Fazit und Ausblick}\label{sec:anwendung}
+
+    Es ist bedauerlich, dass die im Experiment genutzten Instrumente keine sinnvollen Daten sammeln konnten.
+    Dennoch gibt es viele weitere Dokumente die dieselben oder gar mehr Experimente in einer optimalereren Umgebung mit besseren Gerätschaften machen.\\
+    Von der Technik aus gesehen hat der Flug der Pusteblume viele chancen.
+    Mit der Miniaturisierung von Elektronik könnte man Flugroboter bauen, die nur durch Solarenergie schweben.
+    Und es wird auch gesagt, dass die eigenschaften des Pappus einer Platte mit löchern ähneln\footfullcite{tesi},
+    was relativ einfach herzustellen ist.\\
+    Aber wenn man so tief in Technisches einsteigen will, sollte man auch bereit sein, sodass es nicht wie die experimente hier endet.
+
+
+    \newpage%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \printbibliography
+
+    \newpage%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \noindent\Large
+    Ich erkläre hiermit, dass ich die Seminararbeit ohne fremde Hilfe angefertigt und nur die im Literaturverzeichnis angeführten Quellen und Hilfsmittel benutzt habe.
+
+    \large
+    \vspace{\fill}
+    \noindent
+    \begin{minipage}[b]{0.42\textwidth}
+        \centering
+        \textit{Nürnberg, \today}
+        \vspace{4mm}
+        \hrule
+        \vspace{2mm}\par\noindent
+        Ort, Datum
+    \end{minipage}
+    \hfill
+    \begin{minipage}[b]{0.42\textwidth}
+        \centering
+        \hrule
+        \vspace{2mm}\par\noindent
+        Unterschrift des Verfassers
+    \end{minipage}
+\end{document}

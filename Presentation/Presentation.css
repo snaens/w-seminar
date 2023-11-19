@@ -1,0 +1,27 @@
+.reveal .footer {
+    color: dimgray;
+    position: absolute;
+    bottom: 0.5em;
+    left: 0.5em;
+    font-size: 0.5em;
+    z-index: 10;
+}
+
+.center {
+    border: 3px transparent;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    display: flex;
+}
+
+.grid-container {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 375px 375px 375px;
+    grid-template-rows: 275px 275px;
+    grid-auto-columns: auto;
+    grid-auto-rows: 5px;
+}
